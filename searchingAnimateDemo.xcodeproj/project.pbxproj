@@ -13,6 +13,10 @@
 		1DD1EDF11ED95B6A00312765 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD1EDEF1ED95B6A00312765 /* Main.storyboard */; };
 		1DD1EDF31ED95B6A00312765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DD1EDF21ED95B6A00312765 /* Assets.xcassets */; };
 		1DD1EDF61ED95B6A00312765 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD1EDF41ED95B6A00312765 /* LaunchScreen.storyboard */; };
+		1DD1EE071ED95BF500312765 /* JHAnimationChainLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD1EDFF1ED95BF500312765 /* JHAnimationChainLink.m */; };
+		1DD1EE081ED95BF500312765 /* JHChainableAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD1EE011ED95BF500312765 /* JHChainableAnimator.m */; };
+		1DD1EE091ED95BF500312765 /* JHKeyframeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD1EE041ED95BF500312765 /* JHKeyframeAnimation.m */; };
+		1DD1EE0A1ED95BF500312765 /* JHKeyframeAnimationFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD1EE051ED95BF500312765 /* JHKeyframeAnimationFunctions.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,15 @@
 		1DD1EDF21ED95B6A00312765 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DD1EDF51ED95B6A00312765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DD1EDF71ED95B6A00312765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DD1EDFE1ED95BF500312765 /* JHAnimationChainLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JHAnimationChainLink.h; path = JHChainableAnimations/JHAnimationChainLink.h; sourceTree = "<group>"; };
+		1DD1EDFF1ED95BF500312765 /* JHAnimationChainLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JHAnimationChainLink.m; path = JHChainableAnimations/JHAnimationChainLink.m; sourceTree = "<group>"; };
+		1DD1EE001ED95BF500312765 /* JHChainableAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JHChainableAnimator.h; path = JHChainableAnimations/JHChainableAnimator.h; sourceTree = "<group>"; };
+		1DD1EE011ED95BF500312765 /* JHChainableAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JHChainableAnimator.m; path = JHChainableAnimations/JHChainableAnimator.m; sourceTree = "<group>"; };
+		1DD1EE021ED95BF500312765 /* JHChainableBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JHChainableBlocks.h; path = JHChainableAnimations/JHChainableBlocks.h; sourceTree = "<group>"; };
+		1DD1EE031ED95BF500312765 /* JHKeyframeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JHKeyframeAnimation.h; path = JHChainableAnimations/JHKeyframeAnimation.h; sourceTree = "<group>"; };
+		1DD1EE041ED95BF500312765 /* JHKeyframeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JHKeyframeAnimation.m; path = JHChainableAnimations/JHKeyframeAnimation.m; sourceTree = "<group>"; };
+		1DD1EE051ED95BF500312765 /* JHKeyframeAnimationFunctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = JHKeyframeAnimationFunctions.c; path = JHChainableAnimations/JHKeyframeAnimationFunctions.c; sourceTree = "<group>"; };
+		1DD1EE061ED95BF500312765 /* JHKeyframeAnimationFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JHKeyframeAnimationFunctions.h; path = JHChainableAnimations/JHKeyframeAnimationFunctions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,7 @@
 		1DD1EDE51ED95B6A00312765 /* searchingAnimateDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1DD1EDFD1ED95B9E00312765 /* JHChainableAnimations */,
 				1DD1EDE91ED95B6A00312765 /* AppDelegate.h */,
 				1DD1EDEA1ED95B6A00312765 /* AppDelegate.m */,
 				1DD1EDEC1ED95B6A00312765 /* ViewController.h */,
@@ -77,6 +91,22 @@
 				1DD1EDE71ED95B6A00312765 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DD1EDFD1ED95B9E00312765 /* JHChainableAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				1DD1EDFE1ED95BF500312765 /* JHAnimationChainLink.h */,
+				1DD1EDFF1ED95BF500312765 /* JHAnimationChainLink.m */,
+				1DD1EE001ED95BF500312765 /* JHChainableAnimator.h */,
+				1DD1EE011ED95BF500312765 /* JHChainableAnimator.m */,
+				1DD1EE021ED95BF500312765 /* JHChainableBlocks.h */,
+				1DD1EE031ED95BF500312765 /* JHKeyframeAnimation.h */,
+				1DD1EE041ED95BF500312765 /* JHKeyframeAnimation.m */,
+				1DD1EE051ED95BF500312765 /* JHKeyframeAnimationFunctions.c */,
+				1DD1EE061ED95BF500312765 /* JHKeyframeAnimationFunctions.h */,
+			);
+			name = JHChainableAnimations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DD1EE091ED95BF500312765 /* JHKeyframeAnimation.m in Sources */,
+				1DD1EE071ED95BF500312765 /* JHAnimationChainLink.m in Sources */,
+				1DD1EE081ED95BF500312765 /* JHChainableAnimator.m in Sources */,
 				1DD1EDEE1ED95B6A00312765 /* ViewController.m in Sources */,
+				1DD1EE0A1ED95BF500312765 /* JHKeyframeAnimationFunctions.c in Sources */,
 				1DD1EDEB1ED95B6A00312765 /* AppDelegate.m in Sources */,
 				1DD1EDE81ED95B6A00312765 /* main.m in Sources */,
 			);
